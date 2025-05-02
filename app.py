@@ -12,6 +12,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("## 📈 Study Time & Productivity Tracker")
+
 # Load data
 try:
     df = pd.read_csv("data.csv")
