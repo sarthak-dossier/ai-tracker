@@ -12,13 +12,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("## 📈 Study Time & Productivity Tracker")
-import os
-
-# Delete the data.csv file if it exists
-if os.path.exists("data.csv"):
-    os.remove("data.csv")
-    st.success("🗑️ The productivity log has been deleted. Starting fresh!")
-
 # Load data
 try:
     df = pd.read_csv("data.csv")
